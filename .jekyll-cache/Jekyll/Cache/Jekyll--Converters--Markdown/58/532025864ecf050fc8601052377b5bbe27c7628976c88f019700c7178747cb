@@ -1,0 +1,22 @@
+I"+<p>Web geliştiriciler için <a href="https://ubuntu.com/">Ubuntu</a> ortamında geliştirme yapmak için gerekli uygulamaları yüklemek için ufak bir rehber.</p>
+
+<p>İlk olarak sistemimize <strong>Apache</strong> kuracağız.</p>
+
+<p>Bunu için ilk olarak <code class="highlighter-rouge">sudo apt update</code> ile depolar güncellenerek ardından <code class="highlighter-rouge">sudo apt install apache2</code> ile kurulumu gerçekleştireceğiz.  http:r//localhost yazdığınızda tarayıcınıza Apache2 sayfanızı görüyor olmanız gerek.</p>
+
+<p><strong>PHP</strong> ortamında geliştirme yapacağınızı varsaydığım için <code class="highlighter-rouge">sudo apt install php</code> ile de PHP kurulumunu gerçekleştiriyoruz.</p>
+
+<p><strong>Ardından Veritabanı</strong></p>
+
+<p>Veritabanı kurulumu için <code class="highlighter-rouge">sudo apt install php-mysql</code> ve <code class="highlighter-rouge">sudo apt install mysql-server</code> komutları ile mysql kurulumu bitmiş oluyor.</p>
+
+<p>Mysql-server kurulumu sırasında dikkat etmeniz gereken bir husus, kurulum esnasında size root kullanıcısı için şifre soracaktır. Bu şifreyi unutmayacağınız bir şifre yapmanız gerek.</p>
+
+<p><strong>phpMyAdmin</strong></p>
+
+<p><code class="highlighter-rouge">sudo apt install phpmyadmin</code> komutu ile phpMyAdmin için kurulumunu başlatıyoruz. Kurulum aşamasında size 2 tane soru gelecek. İlk olarak sunucu yapılandırma ayarı seçimi. O adımda apache2 seçilmesi gerekiyor. Devamında phpMyAdmin root kullanıcısı için şifre ekranı. Bu kısımda mysql-server kurulumunda yazdığınız şifreyi vermeniz gerekiyor.</p>
+
+<p>Kurulum tamamlandıktan sonra çalıştırmak için link işlemi gerçekleştirmemiz gerek. Bunu için <code class="highlighter-rouge">sudo ln -sf /usr/share/phpmyadmin /var/www/html/phpmyadmin</code> komutuyla gerekli işlemi gerçekleştiriyoruz.</p>
+
+<p>Son adım olarak <code class="highlighter-rouge">sudo /etc/init.d/apache2 restart</code> sunucusunu yeniden başlatarak tüm sistemi işler hale getiriyoruz.</p>
+:ET

@@ -1,0 +1,51 @@
+title: Mertcan Blog
+author: Mertcan
+email: mertcanekren@gmail.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Developer blog.
+show_excerpts: true # set to true to show excerpts on the homepage
+url: http://mertcanekren.github.io
+baseurl: "/blog"
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+plainwhite:
+  name: Mertcan Ekren
+  tagline: Web Developer
+  date_format: "%b %-d, %Y"
+  sitemap: true # set to true to generate sitemap.xml content
+  analytics_id: "UA-28576437-1"
+
+  # generate social links in footer
+  social_links:
+    twitter: mertcanekren
+    github:  mertcanekren
+    linkedIn: in/mertcanekren
+    rss: rss
+    # dribbble: jekyll
+    # flickr:   jekyll
+    # instagram: mertcanekren
+    # pinterest: jekyll
+    # youtube: jekyll
+    # facebook: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+theme: plainwhite
+
+plugins:
+  - jekyll-seo-tag
+  #- jekyll-feed
