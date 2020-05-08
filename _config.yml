@@ -14,7 +14,7 @@ sass:
 plainwhite:
   name: Mertcan Ekren
   tagline: Web Developer
-  date_format: "%b %-d, %Y"
+  date_format: "%d %-b, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   analytics_id: "UA-28576437-1"
 
