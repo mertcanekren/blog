@@ -10,7 +10,7 @@ Web geliştiriciler için [Ubuntu](https://ubuntu.com/) ortamında geliştirme y
 
 İlk olarak sistemimize **Apache** kuracağız.
 
-Bunu için ilk olarak `sudo apt update` ile depolar güncellenerek ardından `sudo apt install apache2` ile kurulumu gerçekleştireceğiz.  http:r//localhost yazdığınızda tarayıcınıza Apache2 sayfanızı görüyor olmanız gerek.
+Bunu için ilk olarak `sudo apt update` ile depolar güncellenerek ardından `sudo apt install apache2` ile kurulumu gerçekleştireceğiz.  http://localhost yazdığınızda tarayıcınıza Apache2 sayfanızı görüyor olmanız gerek.
 
 **PHP** ortamında geliştirme yapacağınızı varsaydığım için `sudo apt install php` ile de PHP kurulumunu gerçekleştiriyoruz.
 
