@@ -2,7 +2,7 @@
 layout: post
 title: Web Geliştiriciler İçin Ubuntu
 date:   2020-05-01 20:00:00 +0530
-description: Web geliştiriciler için [Ubuntu](https://ubuntu.com/) ortamında geliştirme yapmak için gerekli uygulamaları yüklemek için ufak bir rehber.
+description: Web geliştiriciler için Ubuntu ortamında geliştirme yapmak için gerekli uygulamaları yüklemek için ufak bir rehber.
 categories: Ubuntu Linux
 ---
 
