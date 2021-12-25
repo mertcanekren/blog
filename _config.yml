@@ -1,51 +1,86 @@
-title: Mertcan Blog
-author: Mertcan
-email: mertcanekren@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Developer blog.
-show_excerpts: true # set to true to show excerpts on the homepage
+# Site settings
+title:       Mertcan Blog
+email:       mertcanekren@gmail.com
+author:      Mertcan
+description: "Developer Blog."
+baseurl:     ""
 url: http://mertcanekren.github.io
-baseurl: "/blog"
+date_format: "%d %-b, %Y"
+header_pages:
+ - about.md
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-plainwhite:
-  name: Mertcan Ekren
-  tagline: Software Developer
-  date_format: "%d %-b, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  analytics_id: "UA-28576437-1"
+google_analytics: "UA-28576437-1"
 
-  # generate social links in footer
-  social_links:
-    twitter: mertcanekren
-    github:  mertcanekren
-    linkedIn: in/mertcanekren
-    rss: rss
-    # dribbble: jekyll
-    # flickr:   jekyll
-    # instagram: mertcanekren
-    # pinterest: jekyll
-    # youtube: jekyll
-    # facebook: jekyll
+# Optional features
+animated:             false
+show_related_posts:   true
+show_post_footers:    false
+show_social_icons:    true
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+# Preview image for social media aka og:image and twitter:image
+post_preview_image: false
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+# Disqus post comments
+disqus_shortname:
+
+# Social icons
+github_username: mertcanekren
+twitter_username: mertcanekren
+linkedin_username: mertcanekren
+dev_username: 
+
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: false
+share_linkedin: true
+share_digg: false
+share_tumblr: false
+share_reddit: false
+share_stumbleupon: false
+share_hackernews: false
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share:'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'dakikalık okuma'
+    related_posts:  'Diğer postlar'
+    post_footer:    'Lorem ipsum'
+  index:
+    coming_soon: 'Coming soon...'
+  og_locale: 'tr_TR'
 
 # Build settings
-theme: plainwhite
-
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    :title
+paginate:     4
+sass:
+  style: compressed
 plugins:
-  - jekyll-seo-tag
-  #- jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - vendor
