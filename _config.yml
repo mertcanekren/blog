@@ -4,7 +4,7 @@ email:       mertcanekren@gmail.com
 author:      Mertcan
 description: "Developer Blog."
 baseurl:     ""
-url: http://mertcanekren.github.io/
+url: https://mertcanekren.github.io/blog
 date_format: "%d %-b, %Y"
 header_pages:
  - about.md
